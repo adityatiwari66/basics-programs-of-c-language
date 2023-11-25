@@ -1,0 +1,21 @@
+#include <stdio.h> 
+  
+// Function to check prime number 
+void checkPrime(int N) 
+{  int flag = 1,i; 
+    for (int i = 2; i <= N / 2; i++) { 
+        if (N % i == 0) { 
+            flag = 0; 
+            break; 
+        } 
+    } 
+  
+    if (flag) { 
+        printf("The number %d is a Prime Number\n", N); 
+    } 
+    else { 
+        printf("The number %d is not a Prime Number\n", N); 
+    } 
+  
+    return; 
+}
